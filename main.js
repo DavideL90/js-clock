@@ -1,0 +1,16 @@
+var data = new Date();
+var oraNum = data.getHours();
+var ora = oraNum.toString();
+var minutiNum = data.getMinutes();
+var minuti = minutiNum.toString();
+var giorno = data.getDate();
+var mese = data.getMonth();
+var anno = data.getFullYear();
+var giornoSettimana = data.getDay();
+var nomeGiornoSettimana = ["Sunday", "Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+document.getElementById("giorno").innerHTML = giorno + " /";
+document.getElementById("mese").innerHTML = mese + 1 + " /";
+document.getElementById("anno").innerHTML = anno + "-";
+document.getElementById("giornoSettimana").innerHTML = nomeGiornoSettimana[giornoSettimana];
+document.getElementById("ora").innerHTML = ora + " :";
+document.getElementById("minuti").innerHTML = minuti;
